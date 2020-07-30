@@ -1,3 +1,23 @@
+# Avenues to continue 
+
+This playbook is unfortunately still rather far from being able to replace my current email server.
+
++ Consider adding antivirus checker (ClamAV?)
++ Remove postgresql and simply use text files for email user accounts etc.
++ Roundcube role as-is is awfully outdated. Consider if you need Roundcube -- if you do, rewrite that role to use a more install-friendly Roundcube.
++ Figure out backup from the get-go
++ I don't think EncFS is worth it. Perhaps LUKS is easier to use? In any case, I'm not that paranoid, at least not yet.
++ Z-Push sounds nice, but we should probably rewrite the role to install from their repos instead of from source. 
+
+https://progmaticltd.github.io/homebox/  
+https://workaround.org/ispmail/jessie/whats-new  
+https://github.com/schlunsen/ansible-mailserver  
+https://github.com/chrisreeves-/ansible-mailserver  
+https://www.digitalocean.com/community/tutorials/how-to-set-up-a-postfix-email-server-with-dovecot-dynamic-maildirs-and-lmtp  
+http://www.postfix.org/PGSQL_README.html  
+https://sealedabstract.com/code/nsa-proof-your-e-mail-in-2-hours/  
+
+
 [![Build Status](https://travis-ci.org/sovereign/sovereign.svg?branch=master)](https://travis-ci.org/sovereign/sovereign)
 [![CII Best Practices](https://bestpractices.coreinfrastructure.org/projects/460/badge)](https://bestpractices.coreinfrastructure.org/projects/460)
 
