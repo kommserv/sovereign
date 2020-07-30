@@ -7,16 +7,14 @@
   gather_facts: True
 
   roles:
-    - common
-    - mailserver
-    - webmail
-    - blog
-    - ircbouncer
-    - xmpp
-    - owncloud
-    - vpn
-    - tarsnap
-    - news
-    - git
-    - readlater
-    - monitoring  # Monitoring role should be last. See roles/monitoring/README.md
+    - common      # from shared ansible repo
+    - locales     # from shared ansible repo
+    # - encfs  
+    # - postgres 
+    - ufw
+    - security
+    - apache      # from shared ansible repo
+    - mailserver  
+    # - webmail     # horribly outdated as-is. Switch to package, and drop postgresql for mail user tables?
+    # - tarsnap
+    # - monitoring  # Monitoring role should be last. See roles/monitoring/README.md

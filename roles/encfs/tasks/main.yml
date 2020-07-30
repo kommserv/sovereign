@@ -1,0 +1,11 @@
+---
+
+- name: Create decrypted directory (even if encfs isn't used)
+  file: state=directory path=/decrypted
+
+- name: Set decrypted directory permissions
+  file: state=directory path=/decrypted group=mail mode=0775
+
+- import_tasks: encfs.yml
+  tags: encfs
+

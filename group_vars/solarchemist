@@ -1,0 +1,36 @@
+---
+
+# fail2ban reports will be sent to this address
+admin_email: "webmaster@chepec.se"
+
+# common
+domain: "{{ inventory_hostname }}"
+organization: "{{ parentdomain }}"
+
+friendly_networks:
+  - ""
+
+php_default_version_debian: 7.4
+
+# mail
+mail_virtual_domains:
+  - name: "{{ domain }}"
+    pk_id: 1
+mail_virtual_users:
+  - account: "{{ main_user_name }}"
+    domain: "{{ domain }}"
+    password: TODO
+    domain_pk_id: 1
+mail_virtual_aliases:
+  - source: "root@{{ domain }}"
+    destination: "{{ admin_email }}"
+    domain_pk_id: 1
+  - source: "postmaster@{{ domain }}"
+    destination: "{{ admin_email }}"
+    domain_pk_id: 1
+  - source: "webmaster@{{ domain }}"
+    destination: "{{ admin_email }}"
+    domain_pk_id: 1
+  - source: "abuse@{{ domain }}"
+    destination: "{{ admin_email }}"
+    domain_pk_id: 1
