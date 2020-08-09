@@ -2,6 +2,7 @@
 
 # Checking our own server's IP address
 # So we can at least know if it has been blacklisted
+# There is also https://mxtoolbox.com/blacklists.aspx
 
 - name: Download check-rbl
   get_url:

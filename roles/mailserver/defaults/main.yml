@@ -11,6 +11,10 @@ mail_db_database: 'mailserver'
 
 mail_server_hostname: "{{ domain }}"
 mail_server_autoconfig_hostname: "autoconfig.{{ parentdomain }}"
+
+# https://github.com/sovereign/sovereign/issues/8
+# https://github.com/sovereign/sovereign/pull/141
+# https://we.riseup.net/debian/mail#getting-your-postfix-anonymized
 mail_header_privacy: 1
 
 # virtual domains

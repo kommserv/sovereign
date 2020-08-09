@@ -16,6 +16,15 @@ Dovecot uses the antispam module to run rspamc (employing Rspamd).
 The sieve module is finally used to process headers added by Rspamd or
 any other milters.
 
+> Note on how `nuweiba` was setup, following [the Arstechnica guide](https://arstechnica.com/information-technology/2014/02/how-to-run-your-own-e-mail-server-with-your-own-domain-part-1/)
+
++ Postfix to send and receive email
++ Dovecot for IMAP
++ SpamAssassin to handle spam
++ ClamAV to filter mail for viruses
++ Sieve to setup mail filters and rules
+
+
 ## Mail filters
 
 The only mail filter (milter) used is [Rspamd](https://rspamd.com),

@@ -2,8 +2,8 @@
 
 This playbook is unfortunately still rather far from being able to replace my current email server.
 
-+ Consider adding antivirus checker (ClamAV?)
 + Remove postgresql and simply use text files for email user accounts etc.
++ Consider adding antivirus checker (ClamAV?)
 + Roundcube role as-is is awfully outdated. Consider if you need Roundcube -- if you do, rewrite that role to use a more install-friendly Roundcube.
 + Figure out backup from the get-go
 + I don't think EncFS is worth it. Perhaps LUKS is easier to use? In any case, I'm not that paranoid, at least not yet.
