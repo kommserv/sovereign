@@ -16,6 +16,7 @@ https://github.com/chrisreeves-/ansible-mailserver
 https://www.digitalocean.com/community/tutorials/how-to-set-up-a-postfix-email-server-with-dovecot-dynamic-maildirs-and-lmtp  
 http://www.postfix.org/PGSQL_README.html  
 https://sealedabstract.com/code/nsa-proof-your-e-mail-in-2-hours/  
+https://reddit.com/r/selfhosted/comments/in0jww/full_set_of_links_resources_to_create_your_own/  
 
 
 [![Build Status](https://travis-ci.org/sovereign/sovereign.svg?branch=master)](https://travis-ci.org/sovereign/sovereign)
